@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,28 +10,34 @@
     :root{ --bg:#131822; --card:#1B2231; --ink:#E4EAF4; --soft:#93A0B8; --edge:#2C3549; }
   }
   *{ box-sizing:border-box; }
-  body{
-    margin:0; background:var(--bg); color:var(--ink);
+  body{ margin:0; background:var(--bg); color:var(--ink);
     font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-    line-height:1.65; padding:40px 18px;
-  }
-  .wrap{ max-width:620px; margin:0 auto; }
-  .card{ background:var(--card); border:1px solid var(--edge); border-radius:16px; padding:26px 24px; }
-  h1{ font-size:30px; margin:0 0 6px; letter-spacing:-.02em; }
-  p.sub{ color:var(--soft); margin:0 0 22px; }
-  a{ color:inherit; display:block; padding:13px 16px; margin-bottom:9px;
-     border:1px solid var(--edge); border-radius:11px; text-decoration:none; font-weight:600; }
-  a:hover{ background:var(--bg); }
-  footer{ color:var(--soft); font-size:13px; margin-top:22px; text-align:center; }
+    line-height:1.7; padding:40px 18px; }
+  .wrap{ max-width:680px; margin:0 auto; }
+  .card{ background:var(--card); border:1px solid var(--edge); border-radius:16px; padding:30px 26px 34px; }
+  h1{ font-size:28px; margin:0 0 4px; letter-spacing:-.02em; }
+  .date{ color:var(--soft); font-size:14px; margin:0 0 26px; }
+  h2{ font-size:18px; margin:28px 0 8px; }
+  p, li{ font-size:15.5px; }
+  ul{ padding-left:20px; }
+  table{ border-collapse:collapse; width:100%; margin:12px 0; font-size:14.5px; }
+  th,td{ text-align:left; padding:9px 10px; border-bottom:1px solid var(--edge); vertical-align:top; }
+  th{ color:var(--soft); font-size:12px; text-transform:uppercase; letter-spacing:.08em; }
+  .box{ border-left:3px solid var(--soft); padding:2px 0 2px 14px; margin:16px 0; color:var(--soft); }
+  a{ color:inherit; }
+  code{ font-size:.92em; }
+  footer{ color:var(--soft); font-size:13.5px; margin-top:30px; }
+  .links a{ display:block; padding:14px 16px; margin:10px 0; border:1px solid var(--edge);
+    border-radius:12px; text-decoration:none; font-weight:600; }
 </style>
 </head>
-<body>
-  <div class="wrap"><div class="card">
-    <h1>Snake Knot</h1>
-    <p class="sub">Kayan yılan bulmacası · Sliding snake puzzle<br>Düka Games</p>
-    <a href="gizlilik.html">Gizlilik Politikası (Türkçe)</a>
-    <a href="privacy.html">Privacy Policy (English)</a>
-    <footer>Düka Games · İletişim / Contact: sedatemredulger@gmail.com</footer>
-  </div></div>
-</body>
-</html>
+<body><div class="wrap"><div class="card">
+<h1>Snake Knot: Escape Puzzle</h1>
+<p class="date">Kaydır, çöz, kralı kurtar · Sliding snake puzzle</p>
+<p>A mobile game by <strong>Düka Games</strong>.</p>
+<div class="links">
+  <a href="privacy.html">Privacy Policy (English)</a>
+  <a href="gizlilik.html">Gizlilik Politikası (Türkçe)</a>
+</div>
+<footer>Contact: <a href="mailto:dukagames.support@gmail.com">dukagames.support@gmail.com</a></footer>
+</div></div></body></html>
