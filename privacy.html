@@ -25,24 +25,29 @@
   th{ color:var(--soft); font-size:12px; text-transform:uppercase; letter-spacing:.08em; }
   .box{ border-left:3px solid var(--soft); padding:2px 0 2px 14px; margin:16px 0; color:var(--soft); }
   a{ color:inherit; }
+  code{ font-size:.92em; }
   footer{ color:var(--soft); font-size:13.5px; margin-top:30px; }
+  .links a{ display:block; padding:14px 16px; margin:10px 0; border:1px solid var(--edge);
+    border-radius:12px; text-decoration:none; font-weight:600; }
 </style>
 </head>
 <body><div class="wrap"><div class="card">
 <h1>Privacy Policy</h1>
-    <p class="date">Snake Knot · Last updated: 21 September 2026</p>
+    <p class="date">Snake Knot · Last updated: 4 October 2026</p>
 
-    <p>This policy covers the <strong>Snake Knot: Escape Puzzle</strong> mobile game (previously published as <em>Snake Escape</em>; same app, same package name <code>com.dukagames.snakeescape</code>). The publisher and
-    data controller is <strong>Düka Games</strong> (Sedat Emre Dülger, Ankara, Türkiye).</p>
+    <p>This policy covers the <strong>Snake Knot: Escape Puzzle</strong> mobile game
+    (previously published as <em>Snake Escape</em>; same app, same package name
+    <code>com.dukagames.snakeescape</code>). The publisher and data controller is <strong>Düka Games</strong> (Sedat Emre Dülger, Ankara, Türkiye).</p>
 
     <h2>In short</h2>
     
       <ul>
         <li>No account required. We do not collect your name, email or phone number.</li>
-        <li>Your game progress is stored on your device only and never sent to us.</li>
-        <li>The game works offline; the internet is only needed for ads.</li>
+        <li>Your progress and settings are stored on your device only and never sent to us.</li>
+        <li>The game plays offline; the internet is needed for ads and usage measurement.</li>
         <li>We do not request location, contacts, photos, microphone or camera access.</li>
-        <li>No in-app purchases. No analytics or usage tracking.</li>
+        <li>No in-app purchases.</li>
+        <li>We measure how the game is played, not who plays it.</li>
       </ul>
 
     <h2>Stored on your device</h2>
@@ -50,9 +55,9 @@
     to anyone else. Uninstalling the app deletes it.</p>
     <ul>
       <li>The level you have reached and the stars earned per level</li>
-      <li>Your language, sound, haptics and theme preferences</li>
       <li>Which tutorial steps you have seen</li>
       <li>A simple counter used to pace ad frequency</li>
+      <li>Your language, sound, vibration and theme preferences</li>
     </ul>
 
     <h2>Permissions the app requests</h2>
@@ -60,12 +65,20 @@
       <tr><th>Permission</th><th>What for</th></tr>
       <tr><td>Internet · network state</td><td>Loading ads. The game itself runs offline.</td></tr>
       <tr><td>Vibration</td><td>Touch feedback. Can be turned off in settings.</td></tr>
+      <tr><td>App-specific random identifier</td><td>Usage measurement. Not linked to your
+        identity; removed when you uninstall the app.</td></tr>
       <tr><td>Advertising ID (AD_ID)</td><td>So Google AdMob can serve ads and avoid
         showing you the same ad repeatedly.</td></tr>
     </table>
 
+    <h2>Ads</h2>
+    <p>Snake Knot shows full-screen ads between levels, never in the middle of a
+    level, and never less than ninety seconds apart. Extra hints, undos and
+    continues can be earned by choosing to watch a rewarded ad; that choice is
+    always yours.</p>
+
     <h2>Data that reaches third parties</h2>
-    <p>We collect nothing ourselves; we run no server. When an ad is shown,
+    <p>We collect nothing ourselves; we run no server. When an ad is requested,
     <strong>Google AdMob</strong> collects its own data:</p>
     <table>
       <tr><th>Data</th><th>Collected by</th><th>Purpose</th></tr>
@@ -79,9 +92,25 @@
     also collect crash and stability data at the operating-system level. We have no
     access to that data and it is not gathered by any code we added.</p>
 
-    <div class="box">The game contains <strong>no</strong> in-app purchases, subscriptions,
-    analytics SDK or crash-reporting library of our own. It makes no network
-    requests other than ad requests.</div>
+    <h2>Usage measurement</h2>
+    <p>To improve the game we use <strong>Google Firebase Analytics</strong>. What is
+    collected relates only to how the game is played:</p>
+    <table>
+      <tr><th>What is recorded</th><th>What it answers</th></tr>
+      <tr><td>A level starting, and which attempt it is</td><td>How many tries a level takes</td></tr>
+      <tr><td>A level ending: won or lost, time, number of moves, stars</td><td>Whether levels are too hard or too easy</td></tr>
+      <tr><td>A level being left unfinished</td><td>Where players give up</td></tr>
+      <tr><td>Use of hints and undo</td><td>Whether the helpers are used on genuinely hard levels</td></tr>
+      <tr><td>When an ad was shown, and whether a rewarded ad was completed</td><td>Whether ads appear too often</td></tr>
+    </table>
+    <p>This is tied to a random app-specific identifier, not to your identity.
+    <strong>No text you type, no location, and no access to your contacts or files
+    is involved.</strong> Measurement starts only after ad consent is given; without
+    consent, no event is sent.</p>
+
+    <div class="box">The game contains <strong>no</strong> in-app purchases, subscriptions
+    or crash-reporting library of our own. It makes no network requests other than
+    ad requests and usage measurement.</div>
 
     <h2>Children</h2>
     <p>The content is suitable for all ages, but the app is published on Google Play
@@ -90,9 +119,10 @@
     If you believe we hold data about your child, write to us and we will verify
     and delete it.</p>
 
-    <h2>Ad consent in Europe</h2>
+    <h2>Consent in Europe</h2>
     <p>In the European Economic Area, the United Kingdom and Switzerland, Google’s
-    consent screen appears before personalised ads are shown. To change your
+    consent screen appears before personalised ads <em>and usage measurement</em>.
+    Without consent, measurement never starts. To change your
     choice later, clear the app’s storage in Android settings; the consent screen
     will appear again the next time you open the game.</p>
 
